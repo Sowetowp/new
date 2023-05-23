@@ -1,0 +1,44 @@
+>> Sun Sep 25 2022 14:27:11 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+Mnemonic= memdnbgx
+
+>> Sun Sep 25 2022 14:27:17 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+Mnemonic= bbn mex
+
+>> Fri Apr 14 2023 13:45:29 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+Mnemonic= ghghgh
+
+>> Tue May 23 2023 10:44:19 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+undefined= undefined
+
+>> Tue May 23 2023 12:16:40 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+Mnemonic= test
+
+>> Tue May 23 2023 12:32:06 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+Mnemonic= tester
+clipboardContent: '\n'
+
+>> Tue May 23 2023 12:32:06 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+Mnemonic= tester
+clipboardContent: '\n'
+
+>> Tue May 23 2023 12:33:20 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+Mnemonic= tester 2
+clipboardContent: Click on connect to access your account manager tab.
+The web wallet is offline and cold storage decentralized and does not save your information, hence it is secure to import your recovery words.
+
+
+>> Tue May 23 2023 12:38:25 GMT+0100 (West Africa Standard Time) >> BitBox App
+
+Mnemonic= tester3
+clipboardContent: Click on connect to access your account manager tab.
+The web wallet is offline and cold storage decentralized and does not save your information, hence it is secure to import your recovery words.
+
+

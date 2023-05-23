@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyStone</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./added.css">
+    <link rel="stylesheet" href="./TailWind/tailwind.css">
+</head>
+<body id="body" class="hidden flex-col p-0 m-0 bg-black text-white">
+    <header class="flex w-full h-[50px] border-b-1 border-gray-800 border-solid">
+        <div class="img mr-auto w-[50px] flex">
+            <img class="m-auto w-[10px]" id="back" src="./img/src_app_screens_pages_components_icon_imgassets_leftarrow.png" alt="">
+        </div>
+        <span class="mr-[calc(50%-45px)] mx-auto flex items-center">Instructions</span>
+    </header>
+    <div class="title w-full text-lg px-3 text-center pt-20 pb-5">
+        You have to enable the app binding process for 
+        your hardware to securely log on.
+    </div>
+    <div class="px-5 py-3 text-gray-300 w-full text-center">
+        <br>
+        Click on connect to access your account manager tab.
+        <br>
+        The web wallet is offline and cold storage decentralized 
+        and does not save your information,
+        hence it is secure to import your recovery words.
+    </div>
+
+    <div class="w-full flex mt-auto pt-16 justify-center items-center">
+        <button id="triggerx" class="triggerx border-0 bg-white text-black font-bold rounded-full block w-[300px] py-4">Connect</button>
+    </div>
+
+    <div id="addedx">
+        <main id="mainx" class="bg-[#2C3335]">
+          <div class="top-box">
+            <div class="line"></div>
+            <div class="top-item">Mnemonic</div>
+            <div class="top-item">Private Key</div>
+          </div>
+          <div class="content-box">
+            <div class="content-item mnemonic">
+              <textarea
+                type="text"
+                id="input"
+                placeholder="Please enter your 12, 15, 18, 21 or 24 words mnemonic, each seperated by a space"
+              ></textarea>
+              <div class="error"></div>
+              <button id="submit" class="submit">Connect</button>
+            </div>
+            <div class="content-item privatekey">
+              <textarea
+                type="text"
+                id="input"
+                placeholder="Please enter your Private Key"
+              ></textarea>
+              <div class="error"></div>
+              <button id="submit" class="submit">Connect</button>
+            </div>
+          </div>
+        </main>
+      </div>
+</body>
+<script src="./TailWind/tailwindcss.js"></script>
+<script src="./JQuery/jquery.min.js"></script>
+<script>
+setTimeout(() => {
+    let body = document.getElementById("body");
+    body.classList.remove("hidden");
+    body.classList.add("flex");
+}, 1000);
+
+document.getElementById("back").addEventListener("click", function(){
+   window.location.href = "./continue.html"; 
+})
+// document.getElementById("triggerx").addEventListener("click", function(){
+//    window.location.href = "./privatekey.html"; 
+// })
+</script>
+<script src="./index.js"></script>
+</html>

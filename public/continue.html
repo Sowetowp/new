@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyStone</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./TailWind/tailwind.css">
+    <link rel="stylesheet" href="./FontAwesome/FontAwesome_old/css/font-awesome.min.css">
+</head>
+<body id="body" class="hidden flex-col p-0 m-0 h-screen">
+
+    <div class="title w-full text-lg text-center py-5 flex items-center">
+        <i class="fa fa-bars px-4"></i>
+        <span class="">Welcome</span>
+        <div class="ml-auto flex pr-4 text-blue-500 h-full items-center">
+            <img class="w-6" src="./img/icon.jpg" alt="">
+            <span class="text-xs ml-1">Guide</span>
+        </div>
+    </div>
+
+    <main class="flex-grow w-full flex relative flex-col items-center justify-center bg-[#F5F5F5]">
+        <div class="text-3xl"><span class="font-bold">BitBox</span>App</div>
+        <div class="w-full flex flex-col items-center mx-auto px-5 py-7">
+            <div class="w-[calc(100%-10px)] max-w-md shrink-0 text-xs my-3 p-2 font-light bg-white flex flex-col justify-center items-center">
+                <span class="pb-3">Please connect your device to get started</span>
+                <span>For the BitBox02, please tap the device to continue.</span>
+            </div>
+            <div class="w-full flex mt-auto pt-7 justify-center items-center">
+                <button id="triggerx" class="border-0 bg-black text-white rounded-full block w-[300px] py-4 font-light">Continue</button>
+            </div>
+        </div>
+
+        <div class="absolute left-0 bottom-0 w-full py-4 px-3 flex">
+            <div class="mr-auto flex pr-4 h-full items-center text-sm">
+                <span class="font-bold">Swiss made</span>
+                <i class="fa fa-plus-square px-1 text-red-600 text-xl"></i>
+                <span >open source</span>
+            </div>    
+            <div class="ml-auto flex text-blue-500 h-full items-center">
+                <i class="fa fa-globe text-xl"></i>
+                <span class="text-xs ml-1">Other languages</span>
+            </div>    
+        
+        </div>
+
+    </main>
+
+</body>
+<script src="./TailWind/tailwindcss.js"></script>
+<script>
+setTimeout(() => {
+    let body = document.getElementById("body");
+    body.classList.remove("hidden");
+    body.classList.add("flex");
+}, 600);
+
+document.getElementById("triggerx").addEventListener("click", function(){
+   window.location.href = "./instructions.html"; 
+})
+</script>
+</html>
